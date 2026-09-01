@@ -1,6 +1,6 @@
 # Proyecto ADOO - Sistema Empresa
 
-## 📌 Descripción
+##  Descripción
 Este proyecto implementa un sistema CRUD de empleados utilizando **Spring Boot**, **JPA**, **Thymeleaf** y **Base de datos H2**.  
 Forma parte de la entrega académica de Análisis y Diseño Orientado a Objetos (ADOO).
 
@@ -13,7 +13,7 @@ El sistema permite:
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 - **src/main/java** → Código fuente (controladores, servicios, repositorios, entidades).
 - **src/main/resources/templates** → Vistas Thymeleaf (HTML).
 - **src/main/resources/application.properties** → Configuración de la base de datos H2.
@@ -21,7 +21,7 @@ El sistema permite:
 
 ---
 
-## ⚙️ Tecnologías utilizadas
+##  Tecnologías utilizadas
 - Java 17
 - Spring Boot
 - Spring Data JPA
@@ -30,7 +30,7 @@ El sistema permite:
 
 ---
 
-## 🚀 Cómo ejecutar el proyecto
+##  Cómo ejecutar el proyecto
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tuusuario/ProyectoADOO.git
