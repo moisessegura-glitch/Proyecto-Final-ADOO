@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Empleados</title>
+</head>
+<body>
+    <h1>Gestión de Empleados</h1>
+    <form th:action="@{/empleados}" method="post">
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="text" name="puesto" placeholder="Puesto">
+        <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Lista de empleados</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Puesto</th>
+            <th>Acciones</th>
+        </tr>
+        <tr th:each="e : ${empleados}">
+            <td th:text="${e.id}"></td>
+            <td th:text="${e.nombre}"></td>
+            <td th:text="${e.puesto}"></td>
+            <td>
+                <form th:action="@{/empleados/eliminar}" method="post">
+                    <input type="hidden" name="id" th:value="${e.id}">
+                    <button type="submit">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
